@@ -14,24 +14,26 @@
             color: #fff; /* Light text */
             font-family: 'Your Futuristic Font', sans-serif;
         }
-        /* Add more CSS rules for your specific design */
+        .header {
+            padding: 10px 16px;
+            background: rgba(0, 0, 0, 0.3); /* Transparent background */
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: background 0.3s ease; /* Smooth transition */
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to https://github.com/RpJect GitHub Page</h1>
-    </header>
-    <nav>
-        <!-- Add navigation links here -->
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <!-- Add more navigation links -->
-        </ul>
-    </nav>
+    <div class="header" id="myHeader">
+        <img class="logo" src="leeuw.png">
+    </div>
     <main>
-        <!-- Example: Display a link to download a file -->
-        <a href="https://raw.githubusercontent.com/RpJect/Auto-Tune/main/AutoTuneOnline.bat" download>Display The project Code</a>
         <!-- Your main content goes here -->
         <section id="projects">
             <h2>My Projects</h2>
@@ -45,5 +47,16 @@
     <footer>
         powered by © 2024 RpJect
     </footer>
+    <script>
+        window.onscroll = function() {
+            const header = document.getElementById("myHeader");
+            const sticky = header.offsetTop;
+            if (window.pageYOffset > sticky) {
+                header.style.background = "rgba(0, 0, 0, 0.1)"; /* Adjust transparency on scroll */
+            } else {
+                header.style.background = "rgba(0, 0, 0, 0.3)";
+            }
+        };
+    </script>
 </body>
 </html>
