@@ -1,11 +1,30 @@
-/* styles.css */
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
 }
+
+header, footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
 h1 {
-    font-size: 24px;
-    color: #007acc;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
-/* ... other styles ... */
+
+/* Customize further to achieve your sci-fi aesthetic */
+/* Example: Neon text, futuristic fonts, etc. */
+
+/* Add any additional styling rules as needed */
