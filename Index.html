@@ -15,48 +15,10 @@
             font-family: 'Your Futuristic Font', sans-serif;
         }
         .header {
-            padding: 10px 16px;
-            background: rgba(0, 0, 0, 0.3); /* Transparent background */
-            color: #fff;
+            background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+            color: white;
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
-            transition: background 0.3s ease; /* Smooth transition */
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="header" id="myHeader">
-        <img class="logo" src="leeuw.png">
-    </div>
-    <main>
-        <!-- Your main content goes here -->
-        <section id="projects">
-            <h2>My Projects</h2>
-            <!-- Add project details, images, and descriptions -->
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <!-- Add information about yourself -->
-        </section>
-    </main>
-    <footer>
-        powered by © 2024 RpJect
-    </footer>
-    <script>
-        window.onscroll = function() {
-            const header = document.getElementById("myHeader");
-            const sticky = header.offsetTop;
-            if (window.pageYOffset > sticky) {
-                header.style.background = "rgba(0, 0, 0, 0.1)"; /* Adjust transparency on scroll */
-            } else {
-                header.style.background = "rgba(0, 0, 0, 0.3)";
-            }
-        };
-    </script>
-</body>
-</html>
+            padding: 10px 0;
