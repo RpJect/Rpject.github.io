@@ -1,30 +1,62 @@
-/* Reset default styles */
-* {
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0f0d;
+    color: #c5c6c7;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    line-height: 1.6;
-}
-
-header, footer {
-    background-color: #333;
-    padding: 1rem;
+header {
+    background-color: #0b3d91;
+    padding: 10px 0;
     text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Customize further to achieve your sci-fi aesthetic */
-/* Example: Neon text, futuristic fonts, etc. */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-/* Add any additional styling rules as needed */
+nav ul li a {
+    color: #c5c6c7;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #1f2833;
+}
+
+pre {
+    background-color: #1f2833;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    color: #66fcf1;
+}
+
+button {
+    background-color: #45a29e;
+    color: #0b0c10;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0b3d91;
+    color: #c5c6c7;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
