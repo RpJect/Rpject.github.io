@@ -1,42 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RpJect GitHub Page</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RpJect GitHub Page</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: linear-gradient(135deg, #9dfbc8, #f2c6ea); /* Updated background color */
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: #fff;
+      padding: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      margin-left: 20px;
+    }
+
+    /* Navigation */
+    .navigation .nav-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navigation .nav-item {
+      margin: 0 15px;
+    }
+
+    .navigation .nav-link {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .navigation .nav-link:hover,
+    .navigation .nav-link:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 40px 0;
+    }
+
+    /* Home Section */
+    .home-section {
+      background: linear-gradient(135deg, #f9d976, #f39f86);
+      color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .home-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .home-section h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .home-section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .home-section .repo-link {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 4px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-section .repo-link:hover {
+      background-color: #f39f86;
+      color: #333;
+      transform: rotate(-5deg);
+    }
+
+    /* Feature Image */
+    .feature-image {
+      width: 50%; /* Smaller image */
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-image:hover {
+      transform: scale(1.10);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header, .navigation .nav-list, .main-content, .footer {
+        flex-direction: column;
+      }
+
+      .navigation .nav-item {
+        margin: 10px 0;
+      }
+
+      .feature-image {
+        width: 80%; /* Adjust for smaller screens */
+      }
+    }
+
+    /* Add more styles as needed */
+  </style>
 </head>
 <body>
-<header>
-  <h1>RpJect GitHub Page</h1>
-  <nav>
-    <ul>
-       <li><a href="https://rpject.pages.dev/">Home</a></li>
-      
-         <li><a href="https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FRpJect%2FAuto-Tune%2Fblob%2Fmain%2FAutoTuneOnline.bat&filename=AutoTuneOnline.bat">Download AutoTuneOnline</a></li>
-           <li><a href="https://github.com/RpJect/Rpject.github.io/tree/main">Website Main</a></li>
-    </ul>
-  </nav>
-</header>
-<section id="home">
-  <h2>Welcome to RpJect</h2>
-  <p>Explore our repository of futuristic code snippets and projects.</p>
-  <a href="https://github.com/RpJect">   Link Github Repositories </a>
-</section>
-<section id="code">
-  <h2>Code Snippets</h2>
-  <pre><code>// Sample code snippet
-function timeTravel() {
-  // ...code to travel through time
-}</code></pre>
-</section>
-
-  <p>Download our projects and Feel Free To Use.</p>
-</section>
-<footer>
-  <p>© 2024 RpJect® Powered By GitHub</p>
-</footer>
-
+  <div class="container">
+    <header class="header">
+      <h1>RpJect Auto-Tune Page</h1>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="https://rpject.pages.dev/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FRpJect%2FAuto-Tune%2Fblob%2Fmain%2FAutoTuneOnline.bat&filename=AutoTuneOnline.bat" class="nav-link">Download AutoTuneOnline</a></li>
+          <li class="nav-item"><a href="https://github.com/RpJect/Rpject.github.io/tree/main" class="nav-link">Website Main</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="home-section">
+        <h2>Welcome to RpJect</h2>
+        <p>Explore our repository of futuristic code snippets and projects.</p>
+        <a href="https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FRpJect%2FAuto-Tune%2Fblob%2Fmain%2FAutoTuneOnline.bat&filename=AutoTuneOnline.bat">
+          <img src="images/output-onlinepngtools.png" alt="Auto-Tune Interface" class="feature-image">
+        </a>
+        <a href="https://github.com/RpJect" class="repo-link">Link Github Repositories</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2024 RpJect® Powered By GitHub</p>
+    </footer>
+  </div>
 </body>
 </html>
